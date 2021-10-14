@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t krishnava/flask-cicd .
+  - docker build -t krishnava/flask-cicd:1.0 .
 
 scripts:
   - docker run -it krishnava/flask-cicd:1.0 pwd
